@@ -78,7 +78,7 @@
         <section id="games" class="section">
             <div class="section-heading">
                 <p class="eyebrow">Portfolio</p>
-                <h2>Featured Games</h2>
+                <h2>Featured JavaScript Games</h2>
 
                 <p>
                     These projects demonstrate my experience with player
@@ -224,8 +224,9 @@
                 <h2>Military and Civilian Experience</h2>
 
                 <p>
-                    Before entering game development, I gained approximately
-                    10 years of military and civilian work experience.
+                    Before I was a Game Development student, I had
+                    10 years of Military and civilian work experience
+                    on Aircraft, Submarines, and Vehicles. 
                 </p>
             </div>
 
@@ -237,13 +238,15 @@
                     </div>
 
                     <div class="experience-details">
-                        <h3>Aircraft Engine Mechanic - 2A671
-                            F16-C/D - GE-F110-100
-                        </h3>
-                        <p class="company-name">
-                            United States Air Force
-                            
-                        </p>
+                        <h3>Aircraft Engine Mechanic</h3>
+
+                            <p class="company-name">
+                                United States Air Force
+                            </p>
+
+                            <p class="experience-specialty">
+                                2A671 &bull; F-16C/D &bull; GE F110-100
+                            </p>
 
                         <ul>
                             <li>
@@ -270,13 +273,15 @@
                     </div>
 
                     <div class="experience-details">
-                        <h3>Aircraft Engine Mechanic - 2A671
-                            F15-C/D - PW-F100-220    </h3>
+                        <h3>Aircraft Engine Mechanic</h3>
 
-                        <p class="company-name">
-                            United States Air Force
-                                                
-                        </p>
+                            <p class="company-name">
+                                United States Air Force
+                            </p>
+
+                            <p class="experience-specialty">
+                                2A671 &bull; F-15C/D &bull; PW F100-220
+                            </p>
 
                         <ul>
                             <li>
@@ -319,6 +324,32 @@
 
                             <li>
                                 Saftey Stuff
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-date">
+                        2024–2025
+                    </div>
+
+                    <div class="experience-details">
+                        <h3>Automotive Technology Instructor</h3>
+                        <p class="company-name">Lincoln Technical Institute - Part Time</p>
+
+                        <ul>
+                            <li>
+                                Lecturce students on principals of the automotive Technology.
+                                Including electrical, air conditioning systems, and engine dignosis and repair.
+                            </li>
+                            <li>
+                                Responsable for student saftey on the shop floor. Practicing Proper Proper
+                                wear, hazzardios chemical clean up, and hearing protection.
+                            </li>
+
+                            <li>
+                                Students study to prepare for ASE certification tests. 
                             </li>
                         </ul>
                     </div>
@@ -368,12 +399,56 @@
                     internships, collaborations, and feedback on my projects.
                 </p>
 
-                <a
-                    class="button primary-button"
-                    href="mailto:your-email@example.com"
-                >
-                    Email Me
-                </a>
+           <form
+    class="contact-form"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
+>
+    <div class="form-group">
+        <label for="contact-name">Your Name</label>
+
+        <input
+            type="text"
+            id="contact-name"
+            name="name"
+            autocomplete="name"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="contact-email">Email</label>
+
+        <input
+            type="email"
+            id="contact-email"
+            name="email"
+            autocomplete="email"
+            aria-describedby="email-help"
+            required
+        >
+
+        <p id="email-help" class="form-help">
+            I will use this address only to respond to your message.
+        </p>
+    </div>
+
+    <div class="form-group">
+        <label for="contact-message">Message</label>
+
+        <textarea
+            id="contact-message"
+            name="message"
+            rows="7"
+            placeholder="What would you like to discuss?"
+            required
+        ></textarea>
+        </div>
+
+            <button class="button primary-button submit-button" type="submit">
+                Send Message
+            </button>
+        </form>
             </div>
         </section>
 
