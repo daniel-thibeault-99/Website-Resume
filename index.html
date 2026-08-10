@@ -16,6 +16,59 @@
     <title>Daniel Thibeault | Game Developer</title>
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Adds a 300 x 300 pixel-art area to the right of each job */
+        .experience-entry {
+            display: grid;
+            grid-template-columns: 140px minmax(0, 1fr) 300px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .experience-job-art {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .experience-job-art img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            image-rendering: pixelated;
+            border-radius: 8px;
+        }
+
+        /* On smaller screens, move the image below the job text */
+        @media screen and (max-width: 1100px) {
+            .experience-entry {
+                grid-template-columns: 140px minmax(0, 1fr);
+            }
+
+            .experience-job-art {
+                grid-column: 2;
+                justify-content: flex-start;
+            }
+        }
+
+        /* Phone layout */
+        @media screen and (max-width: 700px) {
+            .experience-entry {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-job-art {
+                grid-column: 1;
+            }
+
+            .experience-job-art img {
+                width: min(300px, 100%);
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -264,6 +317,13 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="experience-job-art">
+                        <img
+                            src="images/job-f16.png"
+                            alt="Pixel art representing F-16 aircraft engine mechanic experience"
+                        >
+                    </div>
                 </article>
 
                 <!-- Second military position -->
@@ -300,6 +360,13 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="experience-job-art">
+                        <img
+                            src="images/job-f15.png"
+                            alt="Pixel art representing F-15 aircraft engine mechanic experience"
+                        >
+                    </div>
                 </article>
 
 
@@ -327,6 +394,13 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="experience-job-art">
+                        <img
+                            src="images/job-submarine.png"
+                            alt="Pixel art representing submarine shipyard test experience"
+                        >
+                    </div>
                 </article>
 
                 <article class="experience-entry">
@@ -352,6 +426,13 @@
                                 Students study to prepare for ASE certification tests. 
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="experience-job-art">
+                        <img
+                            src="images/job-instructor.png"
+                            alt="Pixel art representing automotive technology instructor experience"
+                        >
                     </div>
                 </article>
 
@@ -379,6 +460,13 @@
                                 and inform them of necessary repairs. 
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="experience-job-art">
+                        <img
+                            src="images/job-automotive.png"
+                            alt="Pixel art representing automotive technician experience"
+                        >
                     </div>
                 </article>
 
